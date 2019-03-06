@@ -1,0 +1,36 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Gophers Silesia Demo Site"
+theme="vanilla-bootstrap-hugo-theme"
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Blog"
+    pre = "edit"
+    url = "/posts/"
+    weight = 2
+  [[menu.nav]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
+  [[menu.nav]]
+    name = "Contact"
+    pre = "smile"
+    url = "/contact/"
+    weight = 4
+  [[menu.nav]]
+    name = "RSS"
+    pre = "rss"
+    url = "/index.xml"
+    weight = 5
+
+[params]
+  apiURL = "https://api.go.gomb.io"
+
+  includeBootstrapJs = true

@@ -1,0 +1,9 @@
+{{ $dataJ := getJSON "https://min-api.cryptocompare.com/data/price?fsym=USD&tsyms=BTC,BCH,LTC,IOP,PIVX" }}
+
+<h3>Currency rates</h3>
+
+<ul>
+{{ range $k, $v := $dataJ }}
+  <li><strong>USD / {{ $k }}:</strong> {{ $v }}</li>
+{{ end }}
+</ul>

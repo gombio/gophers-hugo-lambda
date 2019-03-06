@@ -1,0 +1,24 @@
+<form action="{{ .Site.Params.Apiurl }}" id="contactForm" method="post">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="Example title">
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+
+    <textarea type="password" class="form-control" id="content" name="content" placeholder="Content"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="title">Captcha</label>
+    <input type="text" class="form-control" id="captcha" name="captcha" placeholder="123asd">
+    <img id="captchaImg" src="" alt="" />
+  </div>
+
+  <div class="form-group">
+    <span id="message" class=""></span>
+  </div>
+
+  <button id="formRegenerateCaptcha" class="btn btn-warning float-left">Regenerate captcha</button>
+  <button type="submit" class="btn btn-primary float-right">Submit</button>
+</form>
