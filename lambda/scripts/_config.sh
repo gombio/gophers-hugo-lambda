@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ACCOUNT_ID="123123"
+
+# Make things custom
+# PREFIX="Test"
+PREFIX=""
+
+# IAM
+POLICY_NAME=$PREFIX"GophersJAMStack"
+ROLE_NAME=$PREFIX"GophersJAMStack"
+ROLE_ARN="arn:aws:iam::$ACCOUNT_ID:role/$ROLE_NAME"
+
+# DynamoDB
+DYNAMO_TABLE_CAPTCHAS=$PREFIX"Captchas"
+DYNAMO_TABLE_FORMS=$PREFIX"Forms"
+
+# Lambdas
+LAMBDA_CAPTCHAS=$PREFIX"captchas"
+LAMBDA_FORMS=$PREFIX"forms"
